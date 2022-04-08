@@ -74,13 +74,24 @@ h6 {
   font-weight: bold;
 }
 
-.celsius {
+#c-link {
   position: relative;
   font-size: 18px;
   top: -20px;
 }
 
-.fahrenheit {
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#f-link {
   position: relative;
   font-size: 18px;
   top: -20px;

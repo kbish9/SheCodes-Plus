@@ -25,17 +25,17 @@
     <div class="container">
       <div class="heading">Weather Search</div>
 
-      <div class="row">
+      <div class="row" id="search">
         <div class="col shadow p-3 bg-body rounded">
           <input
             type="search"
             name="search"
-            id="search"
+            id="city-input"
             size="100"
             placeholder="Select a city..."
           />
 
-          <input type="button" value="Search" id="button" />
+          <input type="submit" value="Search" id="button" />
           <input type="button" value="Current Location" id="location" />
         </div>
       </div>
@@ -43,10 +43,8 @@
       <div class="row">
         <div class="col-6 mt-10">
           <h1>
-            <img
-              src="http://openweathermap.org/img/wn/01d@2x.png"
-              id="icon"
-            /><span id="city"></span>
+            <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
+            <span id="city"></span>
           </h1>
           <h5>Last updated <span id="date"></span></h5>
         </div>
@@ -56,9 +54,9 @@
               <h5 class="card-temp">
                 <div class="tempToday">
                   <span id="temp"></span>
-                  <a href="#" class="celsius">°C</a>
+                  <a href="#" id="c-link" class="active">°C</a>
                   <span class="divider">|</span>
-                  <a href="#" class="fahrenheit">°F</a>
+                  <a href="#" id="f-link">°F</a>
                 </div>
               </h5>
               <h6 class="card-subtitle mb-2 text-muted">in London</h6>
