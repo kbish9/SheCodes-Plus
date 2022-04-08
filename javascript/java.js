@@ -29,7 +29,7 @@ function displayTemp(response) {
   let windSpeed = document.querySelector("#wind-speed");
   let date = document.querySelector("#date");
   let icon = document.querySelector("#icon");
-  
+
   temperatureToday.innerHTML = Math.round(response.data.main.temp);
   cityBegin.innerHTML = response.data.name;
   weatherDescription.innerHTML = response.data.weather[0].description;
