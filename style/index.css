@@ -39,11 +39,17 @@ h1 {
   padding-top: 70px;
   text-transform: capitalize;
 }
+#icon {
+  padding-right: 20px;
+}
 h5 {
   text-align: center;
 }
 h6 {
   text-align: center;
+}
+#weather-description {
+  text-transform: capitalize;
 }
 .card {
   background-color: white;
@@ -56,13 +62,36 @@ h6 {
   display: block;
   padding: 50px;
 }
+
+.tempToday {
+  font-size: 50px;
+}
 .card-temp {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
 }
 .card-day {
   font-weight: bold;
 }
+
+.celsius {
+  position: relative;
+  font-size: 18px;
+  top: -20px;
+}
+
+.fahrenheit {
+  position: relative;
+  font-size: 18px;
+  top: -20px;
+}
+
+.divider {
+  position: relative;
+  font-size: 18px;
+  top: -20px;
+}
+
 footer {
   text-align: center;
   padding: 30px;

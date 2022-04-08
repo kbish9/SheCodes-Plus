@@ -42,20 +42,29 @@
       <br />
       <div class="row">
         <div class="col-6 mt-10">
-          <h1 id="city">London</h1>
-          <h5></h5>
-          <h6></h6>
+          <h1>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              id="icon"
+            /><span id="city"></span>
+          </h1>
+          <h5>Last updated <span id="date"></span></h5>
         </div>
         <div class="col-6">
           <div class="card" style="width: 25rem">
             <div class="card-today">
               <h5 class="card-temp">
-                <div class="tempToday">18</div>
-                <a href="#" class="celsius">C</a> |
-                <a href="#" class="fahrenheit">F</a>
+                <div class="tempToday">
+                  <span id="temp"></span>
+                  <a href="#" class="celsius">°C</a>
+                  <span class="divider">|</span>
+                  <a href="#" class="fahrenheit">°F</a>
+                </div>
               </h5>
               <h6 class="card-subtitle mb-2 text-muted">in London</h6>
               <p class="card-day">Current Temperature</p>
+              <h6 id="weather-description"></h6>
+              <h6>Wind: <span id="wind-speed"></span> km/h</h6>
             </div>
           </div>
         </div>
@@ -66,9 +75,11 @@
             <div class="card" style="width: 10rem">
               <div class="card-body">
                 <h5 class="card-temp">
-                  <div class="temp">18</div>
-                  <a href="#" class="celsius">C</a> |
-                  <a href="#" class="fahrenheit">F</a>
+                  <div class="temp">
+                    18 <a href="#" class="celsius">°C</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="fahrenheit">°F</a>
+                  </div>
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                   Expected Temperature
@@ -81,9 +92,11 @@
             <div class="card" style="width: 10rem">
               <div class="card-body">
                 <h5 class="card-temp">
-                  <div class="temp">18</div>
-                  <a href="#" class="celsius">C</a> |
-                  <a href="#" class="fahrenheit">F</a>
+                  <div class="temp">
+                    18 <a href="#" class="celsius">°C</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="fahrenheit">°F</a>
+                  </div>
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                   Expected Temperature
@@ -96,9 +109,11 @@
             <div class="card" style="width: 10rem">
               <div class="card-body">
                 <h5 class="card-temp">
-                  <div class="temp">18</div>
-                  <a href="#" class="celsius">C</a> |
-                  <a href="#" class="fahrenheit">F</a>
+                  <div class="temp">
+                    18 <a href="#" class="celsius">°C</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="fahrenheit">°F</a>
+                  </div>
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                   Expected Temperature
@@ -111,9 +126,11 @@
             <div class="card" style="width: 10rem">
               <div class="card-body">
                 <h5 class="card-temp">
-                  <div class="temp">18</div>
-                  <a href="#" class="celsius">C</a> |
-                  <a href="#" class="fahrenheit">F</a>
+                  <div class="temp">
+                    18 <a href="#" class="celsius">°C</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="fahrenheit">°F</a>
+                  </div>
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                   Expected Temperature
@@ -126,9 +143,11 @@
             <div class="card" style="width: 10rem">
               <div class="card-body">
                 <h5 class="card-temp">
-                  <div class="temp">18</div>
-                  <a href="#" class="celsius">C</a> |
-                  <a href="#" class="fahrenheit">F</a>
+                  <div class="temp">
+                    18 <a href="#" class="celsius">°C</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="fahrenheit">°F</a>
+                  </div>
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                   Expected Temperature
@@ -139,10 +158,14 @@
           </div>
         </div>
       </div>
-      <p>https://github.com/kbish9/SheCodes-Plus</p>
-      <footer>Website created by Kelsey Bishop</footer>
+      <footer>
+        <a href="https://github.com/kbish9/SheCodes-Plus" target="_blank"
+          >Open source code</a
+        >
+        by Kelsey Bishop
+      </footer>
     </div>
 
-    <script src="javascript/index.js"></script>
+    <script src="javascript/java.js"></script>
   </body>
 </html>

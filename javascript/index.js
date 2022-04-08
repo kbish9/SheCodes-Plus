@@ -7,7 +7,7 @@ let days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 let day = days[now.getDay()];
 let hours = now.getHours();
@@ -24,7 +24,7 @@ function city(event) {
   let apiKey = "d8e366c15b60dabbe9f54b799921805a";
   let citySearch = `${input.value}`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&units=metric`;
-
+ 
   function showTemperature(response) {
     let temperature = Math.round(response.data.main.temp);
     let temp = document.querySelector(".tempToday");
