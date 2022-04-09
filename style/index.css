@@ -80,6 +80,7 @@ h6 {
 }
 .card-day {
   font-weight: bold;
+  font-size: 22px;
 }
 
 #c-link {
@@ -106,6 +107,12 @@ h6 {
 }
 
 .divider {
+  position: relative;
+  font-size: 18px;
+  top: -20px;
+}
+
+.degrees {
   position: relative;
   font-size: 18px;
   top: -20px;

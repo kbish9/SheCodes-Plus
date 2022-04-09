@@ -38,13 +38,12 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
   let forecast = response.data.daily;
   let temperatureForecast = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index > 0 && index < 6) {
       forecastHTML =
         forecastHTML +
         `
@@ -53,7 +52,7 @@ function displayForecast(response) {
     
         <h5 class="card-temp">
           <div class="temp">
-          ${Math.round(forecastDay.temp.max)}°C
+          ${Math.round(forecastDay.temp.max)}<span class="degrees">°C</span>
           </div>
         </h5>
         <h6 class="card-subtitle mb-2 text-muted">
@@ -98,6 +97,16 @@ function displayTemp(response) {
   getForecast(response.data.coord);
 }
 
+function displayLocationTemp(response) {
+  search(response.data[0].name);
+}
+
+function displayHereTemp(response) {
+  let apiKey = "d8e366c15b60dabbe9f54b799921805a";
+  let apiUrl = `  https://api.openweathermap.org/geo/1.0/reverse?lat=${response.coords.latitude}&lon=${response.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayLocationTemp);
+}
+
 function search(city) {
   let apiKey = "d8e366c15b60dabbe9f54b799921805a";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -137,5 +146,12 @@ fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 let celsiusLink = document.querySelector("#c-link");
 celsiusLink.addEventListener("click", displayCelsius);
+
+function currentPosition() {
+  navigator.geolocation.getCurrentPosition(displayHereTemp);
+}
+
+let button = document.querySelector("#location");
+button.addEventListener("click", currentPosition);
 
 search("London");
