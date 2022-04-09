@@ -68,7 +68,7 @@ h6 {
 }
 
 #current {
-  padding: 50px;
+  padding: 48px;
 }
 
 .tempToday {
@@ -109,6 +109,10 @@ h6 {
   position: relative;
   font-size: 18px;
   top: -20px;
+}
+
+#weather-forecast {
+  margin-left: 44px;
 }
 
 footer {
