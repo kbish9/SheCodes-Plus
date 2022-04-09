@@ -36,7 +36,7 @@ function displayTemp(response) {
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
   date.innerHTML = formatDate(response.data.dt * 1000);
   icon.setAttribute(
-    "scr",
+    "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
