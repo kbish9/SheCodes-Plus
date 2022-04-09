@@ -20,6 +20,37 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+function displayForecast() {
+  let temperatureForecast = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["thu", "fri", "sat", "sun", "mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+    <div class="card" style="width: 10rem" id="weather-forecast">
+    
+        <h5 class="card-temp">
+          <div class="temp">
+            18 °C
+          </div>
+        </h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          Expected Temperature
+        </h6>
+        <p class="card-day">${day}</p>
+      
+    </div>
+  </div>
+ `;
+  });
+  forecastHTML = forecastHTML + "</div>";
+  temperatureForecast.innerHTML = forecastHTML;
+}
+
 function displayTemp(response) {
   celsius = response.data.main.temp;
 
@@ -82,3 +113,4 @@ let celsiusLink = document.querySelector("#c-link");
 celsiusLink.addEventListener("click", displayCelsius);
 
 search("London");
+displayForecast();

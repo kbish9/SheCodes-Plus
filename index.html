@@ -41,8 +41,9 @@
       </div>
       <br />
       <div class="row">
-        <div class="col-6 mt-10">
-          <div class="class" id="current">
+        <div class="col-1"></div>
+        <div class="col-5 mt-10">
+          <div class="card" id="current">
             <h1>
               <span id="city"></span>
             </h1>
@@ -51,11 +52,13 @@
               <img
                 src="http://openweathermap.org/img/wn/01d@2x.png"
                 id="icon"
+                width="100px"
               />
             </div>
           </div>
         </div>
-        <div class="col-6">
+
+        <div class="col-5">
           <div class="card" style="width: 25rem">
             <div class="card-today">
               <h5 class="card-temp">
@@ -73,95 +76,7 @@
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-1"></div>
-          <div class="col-2">
-            <div class="card" style="width: 10rem">
-              <div class="card-body">
-                <h5 class="card-temp">
-                  <div class="temp">
-                    18 <a href="#" class="celsius">°C</a>
-                    <span class="divider">|</span>
-                    <a href="#" class="fahrenheit">°F</a>
-                  </div>
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Expected Temperature
-                </h6>
-                <p class="card-day">Tomorrow</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card" style="width: 10rem">
-              <div class="card-body">
-                <h5 class="card-temp">
-                  <div class="temp">
-                    18 <a href="#" class="celsius">°C</a>
-                    <span class="divider">|</span>
-                    <a href="#" class="fahrenheit">°F</a>
-                  </div>
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Expected Temperature
-                </h6>
-                <p class="card-day">Saturday</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card" style="width: 10rem">
-              <div class="card-body">
-                <h5 class="card-temp">
-                  <div class="temp">
-                    18 <a href="#" class="celsius">°C</a>
-                    <span class="divider">|</span>
-                    <a href="#" class="fahrenheit">°F</a>
-                  </div>
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Expected Temperature
-                </h6>
-                <p class="card-day">Sunday</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card" style="width: 10rem">
-              <div class="card-body">
-                <h5 class="card-temp">
-                  <div class="temp">
-                    18 <a href="#" class="celsius">°C</a>
-                    <span class="divider">|</span>
-                    <a href="#" class="fahrenheit">°F</a>
-                  </div>
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Expected Temperature
-                </h6>
-                <p class="card-day">Monday</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card" style="width: 10rem">
-              <div class="card-body">
-                <h5 class="card-temp">
-                  <div class="temp">
-                    18 <a href="#" class="celsius">°C</a>
-                    <span class="divider">|</span>
-                    <a href="#" class="fahrenheit">°F</a>
-                  </div>
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Expected Temperature
-                </h6>
-                <p class="card-day">Tuesday</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="weather-forecast"></div>
       </div>
       <footer>
         <a href="https://github.com/kbish9/SheCodes-Plus" target="_blank"

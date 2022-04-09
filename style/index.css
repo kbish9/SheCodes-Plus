@@ -60,20 +60,17 @@ h6 {
   text-align: center;
   box-shadow: 2px 3px #e7e7e7;
   border-radius: 10px;
+  padding: 10px;
 }
 .card-today {
   display: block;
   padding: 50px;
 }
+
 #current {
-  display: block;
-  margin: 10px;
-  padding: 40px 10px;
-  background-color: white;
-  text-align: center;
-  box-shadow: 2px 3px #e7e7e7;
-  border-radius: 10px;
+  padding: 50px;
 }
+
 .tempToday {
   font-size: 50px;
 }
