@@ -94,6 +94,8 @@ function displayTemp(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   getForecast(response.data.coord);
 }
 
@@ -153,5 +155,8 @@ function currentPosition() {
 
 let button = document.querySelector("#location");
 button.addEventListener("click", currentPosition);
+
+let submit = document.querySelector("#button");
+submit.addEventListener("click", handleSubmit);
 
 search("London");
